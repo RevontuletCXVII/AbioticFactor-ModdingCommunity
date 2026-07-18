@@ -1,0 +1,24 @@
+### **GameplayTagContainer methods in Lua-UE4SS**
+
+**Did not work: replacing the whole container**
+
+`MakeGameplayTagContainerFromArray(...)` can build a temporary container, but assigning that result back to a nested live `GameplayTagContainer` did not persist the change. UE4SS could create the temporary value, but could not reliably write it back into the live struct field.
+
+**Did not work: `AddGameplayTag(...)`**
+
+The Unreal function is normally valid, but it modifies the container by reference. UE4SS exposes nested containers to Lua as table-like values, then rejects that value when a function requires a writable reference/out parameter.
+
+**Worked: edit the existing `GameplayTags` array in place**
+
+Read the existing live container, access its `GameplayTags` array, and append or remove the specific tag there.
+
+This works because it changes the live array already owned by the container. It does not replace the container and does not require UE4SS to pass a Lua table as a writable function parameter.
+
+```lua
+local tagContainer = row[TagField]
+local tags = tagContainer.GameplayTags
+
+tags[tags:GetArrayNum() + 1] = GameplayTag("Example.Tag")
+```
+
+For removal, use the same in-place array approach: find the matching tag in `GameplayTags`, then remove that array entry.

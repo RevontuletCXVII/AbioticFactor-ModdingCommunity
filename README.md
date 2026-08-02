@@ -7,3 +7,6 @@ This repository serves as an archive for the Abiotic Factor modding community, c
 [Abiotic Factor](https://store.steampowered.com/app/427410/Abiotic_Factor/)
 <!-- Implement widget when perms -->
 <!-- ![Discord Banner 2](https://discord.com/api/guilds/[SERVER ID]/widget.png?style=banner2) -->
+
+# Useful Tools
+[AbioticSchema](https://abioticextended.github.io/docs/schema/intro/)

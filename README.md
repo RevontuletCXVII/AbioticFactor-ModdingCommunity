@@ -9,7 +9,7 @@ This repository serves as an archive for the Abiotic Factor modding community, c
 <!-- ![Discord Banner 2](https://discord.com/api/guilds/[SERVER ID]/widget.png?style=banner2) -->
 
 # Useful Tools
-[AbioticSchema](https://abioticextended.github.io/docs/schema/intro/)
-[RetocGUI](https://www.nexusmods.com/aliensdarkdescent/mods/70)
-[FModel](https://github.com/4sval/FModel)
-[UAssetGUI](https://github.com/atenfyr/uassetgui)
+[AbioticSchema](https://abioticextended.github.io/docs/schema/intro/) |
+[RetocGUI](https://www.nexusmods.com/aliensdarkdescent/mods/70) |
+[FModel](https://github.com/4sval/FModel) |
+[UAssetGUI](https://github.com/atenfyr/uassetgui) |

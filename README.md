@@ -1,6 +1,8 @@
 # Abiotic Factor Community Modding Repository
 This repository serves as an archive for the Abiotic Factor modding community, containing mappings, orphaned mods, etcetera
 
+## To contribute to this repo, either submit a collaborator request or fork the repo and issue a PR.
+
 # Useful Links
 [AbioticSchema Guide](https://abioticextended.github.io/docs/) |
 [Modding Guide](https://hackmd.io/@Swept/abioticfactormodding) |
